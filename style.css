@@ -191,6 +191,7 @@ ul {
     background: white;
     border-radius: 50%;
     transition: all 0.3s ease;
+    transform: translate(-60%,-30%);
   }
   
   .change {
@@ -216,7 +217,6 @@ ul {
   .change-bg {
     width: 520px;
     height: 460px;
-    transform: translate(-60%,-30%);
   }
 
 @media (min-width: 768px) {
