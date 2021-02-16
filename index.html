@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css' integrity='sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==' crossorigin='anonymous'/>
+    <title>PeggyHsu</title>
+</head>
+<body>
+  <div id="menu" class="position-fixed">
+    <div id="menu-bar" onclick="menuOnClick()">
+      <div id="bar1" class="bar"></div>
+      <div id="bar2" class="bar"></div>
+      <div id="bar3" class="bar"></div>
+    </div>
+    <nav class="nav" id="nav">
+      <ul>
+        <li class="navItem">
+            <a class="active" href="#home">#HOME</a>
+        </li>
+        <li class="navItem">
+            <a href="#about">#ABOUT</a>
+        </li>
+        <li class="navItem">
+            <a href="#profolio">#PROFOLIO</a>
+        </li>
+    </ul>
+    </nav> 
+  </div>
+  <div class="menu-bg position-fixed" id="menu-bg"></div>
+  <header id="header" class="position-fixed">
+    <nav>
+      <ul>
+        <li class="navItem">
+          <a class="active" href="#home">#HOME</a>
+        </li>
+        <li class="navItem">
+          <a href="#about">#ABOUT</a>
+        </li>
+        <li class="navItem">
+          <a href="#profolio">#PROFOLIO</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section id="home" class="section mb-5 vh-100 gx-0 d-flex flex-wrap flex-column flex-lg-row justify-content-center align-items-center">
+      <div class="col-lg-3 avatar-wrapper mb-lg-5 mx-5">
+          <img src="./images/avatar.jpg">
+      </div>
+      <div class="col-lg-4 m-5 m-lg-0 introduce">
+          <h3 class="title-text">Hi,</h3>
+          <h3 class="mb-3 title-text">I'm <span class="name">Fang Yu Hsu</span>.</h3>
+          <h3 class="title-text" id="typing" ></h3>
+      </div>
+  </section>
+  <section id="about" class="section vh-lg-100 gx-0 my-5 d-flex flex-wrap justify-content-center align-items-center">
+      <div class="col-12 mb-5 mb-lg-0 text-center">
+        <h1 class="section_title">ABOUT ME</h1>
+      </div>
+      <div class="col-12 d-flex flex-wrap justify-content-center about_box">
+        <div class="col-10 col-lg-4 skill_box mx-5 mb-5 mb-lg-0 p-4 p-lg-5">
+          <h1 class="blue">Education</h1>
+          <hr class="my-4">
+          <article class="d-flex mb-3">
+            <p>2020 - 2021</p>
+            <div class="education">
+              <h5>泰山職訓局</h5>
+              <p>前端網頁班 (992小時)</p>
+            </div>
+          </article>
+          <article class="d-flex mb-3">
+            <p>2016 - 2020</p>
+            <div class="education">
+              <h5>國立暨南國際大學</h5>
+              <p>東南亞學系</p>
+            </div>
+          </article>
+          <article class="d-flex mb-3">
+            <p>2018 - 2019</p>
+            <div class="education">
+              <h5>泰國蘭康恆大學</h5>
+              <p>財金系 交換學生</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-10 col-lg-4 skill_box p-4 p-lg-5">
+          <h1 class="blue">Skill</h1>
+          <hr class="my-4">
+          <article class="mb-5 education">
+            <h5 class="font-weight-bold mb-1">前端技術</h5>
+              <p class="m-3">HTML 、 CSS 、 Bootstrap 、 jQuery 、 Javascript 、 Vue.js</p>
+          </article>
+          <article class="education">
+            <h5 class="font-weight-bold">後端技術</h5>
+              <p class="m-3">Node.js 、 MongoDB</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="profolio" class="section pt-5 gx-0 d-flex flex-column justify-content-center align-items-center">
+    <div class="col-12 text-center">
+      <h1 class="section_title">Profolio</h1>
+    </div>
+    <div class="m-5 col-lg-8 profolio_box d-flex justify-content-center flex-wrap">
+      <div class="col-lg-8 mb-5 mb-lg-0 text-center">
+        <img class="w-75" src="./images/w-1.png" alt="jQuery 抓小偷遊戲">
+      </div>
+      <article class="col-lg-4">
+        <h4 class="font-weight-bold">jQuery 抓小偷遊戲</h4>
+          <p class="my-3">使用技術 :  jQuery</p>
+          <p>說明:</p> 
+            <p>透過 jQuery 操作網頁DOM，
+            點擊到特定內容加分，並透過 LocalStorage
+            儲存本機最高分紀錄</p>
+        <div class="d-flex justify-content-center">
+          <a class="btn" href="https://peggy2344.github.io/jq-click-game/index.html" target="_blank">LINK</a>
+          <a class="btn" href="https://github.com/Peggy2344/jq-click-game" target="_blank">github</a>
+        </div>
+      </article>
+    </div>
+    <div class="p-4 p-lg-5 m-5 col-lg-8 profolio_box d-flex justify-content-center flex-wrap">
+      <div class="col-lg-8 mb-5 mb-lg-0 text-center">
+        <img class="w-75" src="./images/w-2.png" alt="jQuery 翻牌記憶遊戲">
+      </div>
+      <article class="col-12 col-lg-4">
+        <h4 class="font-weight-bold">jQuery 翻牌記憶遊戲</h4>
+          <p class="my-3">使用技術 :  jQuery</p>
+          <p>說明:</p> 
+            <p>透過 jQuery 操作網頁DOM，點擊圖片及相對的發音，配對成功後會出現在左側，遊戲共設置五個關卡。</p>
+        <div class="d-flex justify-content-center">
+          <a class="btn" href="https://peggy2344.github.io/thaifood/" target="_blank">LINK</a>
+          <a class="btn" href="https://github.com/Peggy2344/thaifood" target="_blank">github</a>
+        </div>
+      </article>
+    </div>
+    <div class="p-4 p-lg-5 m-5 col-lg-8 profolio_box d-flex justify-content-center flex-wrap">
+      <div class="col-lg-8 mb-5 mb-lg-0 text-center">
+        <img class="w-75" src="./images/w-7.png" alt="打酒瓶小遊戲">
+      </div>
+      <article class="col-12 col-lg-4">
+        <h4 class="font-weight-bold">打酒瓶小遊戲</h4>
+          <p class="my-3">使用技術 :  jQuery</p>
+        <div class="d-flex justify-content-center">
+          <a class="btn" href="https://peggy2344.github.io/jq-shooting-game/" target="_blank">LINK</a>
+          <a class="btn" href="https://github.com/Peggy2344/jq-shooting-game" target="_blank">github</a>
+        </div>
+      </article>
+    </div>
+    <div class="p-4 p-lg-5 m-5 col-lg-8 profolio_box d-flex justify-content-center flex-wrap">
+      <div class="col-lg-8 d-flex mb-5 mb-lg-0 text-center">
+        <div class="col-5 mb-5">
+          <img class="w-75" src="./images/w-5.jpg" alt="line機器人">
+        </div>
+        <div class="col-5">
+          <img class="w-75" src="./images/w-6.jpg" alt="line機器人">
+        </div>
+      </div>
+      <article class="col-12 col-lg-4">
+        <h4 class="font-weight-bold">泰英翻譯 line機器人</h4>
+          <p class="my-3">使用技術 :  Node.js</p>
+          <p>說明:</p> 
+            <p>串接Longdo API 及 news API，根據使用者輸入語言回答翻譯內容或新聞。在node.js 環境下執行</p>
+        <div class="d-flex justify-content-center">
+          <a class="btn" href="https://github.com/Peggy2344/linebot" target="_blank">github</a>
+        </div>
+      </article>
+    </div>
+    <div class="p-4 p-lg-5 m-5 col-lg-8 profolio_box d-flex justify-content-center flex-wrap">
+      <div class="d-flex flex-wrap col-lg-8 mb-5 mb-lg-0 text-center">
+        <div class="col-12 mb-5">
+          <img class="w-75" src="./images/w-3.png" alt="HIKER使用者">
+        </div>
+        <div class="col-12">
+          <img class="w-75" src="./images/w-4.png" alt="HIKER管理者">
+        </div>
+      </div>
+      <article class="col-12 col-lg-4">
+        <h4 class="font-weight-bold">HIKER 登山用品電商網站</h4>
+          <p class="my-3">使用技術 :<br> Vuetify、 Vue Router 、 Vuex 、 Vue.js 、 MongoDB 、Node.js </p>
+          <p>說明:<br>使用介面區分使用者與管理者身分，透過session記錄使用者身分及登入。後端撰寫 RESTful API並使用mongoose套件對資料進行增刪改。</p>
+              <p><span class="font-weight-bold">管理者:</span><br>上傳商品、上下架商品、管理訂單、更新首頁及管理評論、問答。</p>
+              <p><span class="font-weight-bold">使用者:</span><br>購買商品、加入購物車、對商品進行評論或提問。</p>
+              <p><span class="font-weight-bold">使用者測試帳號:</span><br>
+              帳號: hiker<br>
+              密碼: hiker123</p>
+        <div class="d-flex justify-content-center">
+          <a class="btn" href="https://peggy2344.github.io/hiker/#/" target="_blank">LINK</a>
+          <a class="btn" href="https://github.com/Peggy2344/hiker" target="_blank">github</a>
+        </div>
+      </article>
+    </div>
+  </section>
+  <script type="text/javascript"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js' integrity='sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==' crossorigin='anonymous'></script>
+  <script src="./plugins/index.js" charset="utf-8"></script>
+  <script type="text/javascript">
+
+    let writer = new TypeWriter({
+      container: document.querySelector('#typing'),
+      strs: ["Front End developer."],
+      delay: 100
+    });
+    $(function() {
+      $(".navItem a").click(function() {
+          $(".navItem a").removeClass("active");
+          $(this).addClass("active");
+      });
+      function debounce(func, wait = 200, immediate = true) {
+      var timeout;
+      return function () {
+        var context = this,
+          args = arguments;
+        var later = function () {
+          timeout = null;
+          func.apply(context, args);
+        };
+        if (timeout) return;
+        //   var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (immediate) func.apply(context, args);
+      };
+    }
+      function scrollHandler (e) {
+        let windowTop = window.scrollY;
+        let sidebar = document.querySelectorAll('#header .navItem a')
+        if (!sidebar) sidebar = document.querySelectorAll('#menu .navItem a')
+        let section = document.querySelectorAll('.section')
+        for (let i = 0 ; i < sidebar.length; i++) {
+          if (windowTop > section[i].offsetTop - 10) {
+            if (i === (sidebar.length - 1)) {
+              $(".navItem a").removeClass("active");
+              sidebar[sidebar.length - 1].classList.add("active")
+            } else if (windowTop < section[i+1].offsetTop) {
+              $(".navItem a").removeClass("active");
+              sidebar[i].classList.add("active")
+            }
+          }
+        } 
+      }
+      window.addEventListener('scroll', debounce(scrollHandler))
+    });
+    function menuOnClick() {
+      document.getElementById("menu-bar").classList.toggle("change");
+      document.getElementById("nav").classList.toggle("change");
+      document.getElementById("menu-bg").classList.toggle("change-bg");
+    }
+  </script>
+</body>
+</html>
